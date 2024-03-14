@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 0.5rem;
+    color: #fff;
+    background-color: #081b31;
+}
+.choices{
+    width: 100%;
+    height: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.choice{
+    height: 170px;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.choice:hover{
+    background-color: black;
+}
+
+.choice img{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.score-board{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.score{
+font-weight: 700;    
+}
+
+.score #user-score{
+    font-size: 4rem;
+}
+
+.score #comp-score{
+    font-size: 4rem;
+}
+
+.score p{
+    font-size: 3rem;
+}
+
+.result{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+
+.result p{
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: #081B31;
+}
+
+#resutl-board{
+    width: 15%;
+}
+.newelem{
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width : 600px){
+    body{
+        height: 100%;
+        width: 100%;
+    }
+
+    h1{
+        width: 100%;
+        height: 10vh;
+        font-size: 5.5vh;
+        color: white;
+    }
+    .choices{
+        width: 100%;
+        height: 30vh;
+        overflow: hidden;
+        color: black;
+        gap: 1vh;
+    }
+    .choice{
+        height: 90px;
+        width: 90px;
+    }
+
+    .choice img{
+        height: 80px;
+        width: 80px;
+    }
+    .result{
+        font-size: 3vh;
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+     
+    .result p{
+       display: inline;
+    }
+    .score #user-score{
+        font-size: 10vh;
+    }
+
+    .score #comp-score{
+        font-size: 10vh;
+    }
+    
+    .score-board{
+        display: flex;
+    }
+
+    #resutl-board{
+        width: 70%;
+    }
+
+    .score-board p{
+        width: 100%;
+        font-size: 3vh;
+    }
+    .newelem{
+        width: 100%;
+        font-size: 3vh;
+        display: flex;
+        flex-direction: column;
+    }
+}
